@@ -3,9 +3,8 @@ import os;os.system('clear')
 
 # Loop lanjut/tidak
 def loop():
-
     while True:
-        x = input('lanjut? (y/n)')
+        x = input('lanjut? (y/n)>> ')
         if x in ['y','Y']:
             break
         elif x in ['n','N']:
@@ -14,9 +13,8 @@ def loop():
             print('\n','x'*5,'undefined','x'*5,'\n')
             continue
 
-# Loop input nomor
+# Loop input number
 def insrt(c):
-
     while True:
         try:
             a = float(input('first: '))
@@ -41,7 +39,6 @@ def insrt(c):
 
 # Main loop
 def main():
-
     while True:
         print('\nCalculator\n ditambah > +\n dikurangi > -\n dikali > x\n dibagi > /\n','='*15)
         inpt = input('>> ')
